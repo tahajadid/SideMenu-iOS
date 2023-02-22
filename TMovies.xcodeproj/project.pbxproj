@@ -99,9 +99,9 @@
 		1CDAF1FB29A6587600842AF8 /* TMovies */ = {
 			isa = PBXGroup;
 			children = (
+				1CDAF22C29A65ABA00842AF8 /* controllers */,
 				1CDAF1FC29A6587600842AF8 /* AppDelegate.swift */,
 				1CDAF1FE29A6587600842AF8 /* SceneDelegate.swift */,
-				1CDAF20029A6587600842AF8 /* ViewController.swift */,
 				1CDAF20229A6587600842AF8 /* Main.storyboard */,
 				1CDAF20529A6587700842AF8 /* Assets.xcassets */,
 				1CDAF20729A6587700842AF8 /* LaunchScreen.storyboard */,
@@ -125,6 +125,14 @@
 				1CDAF21F29A6587800842AF8 /* TMoviesUITestsLaunchTests.swift */,
 			);
 			path = TMoviesUITests;
+			sourceTree = "<group>";
+		};
+		1CDAF22C29A65ABA00842AF8 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CDAF20029A6587600842AF8 /* ViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
