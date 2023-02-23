@@ -16,6 +16,14 @@
 		1CDAF21429A6587700842AF8 /* TMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF21329A6587700842AF8 /* TMoviesTests.swift */; };
 		1CDAF21E29A6587800842AF8 /* TMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF21D29A6587800842AF8 /* TMoviesUITests.swift */; };
 		1CDAF22029A6587800842AF8 /* TMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF21F29A6587800842AF8 /* TMoviesUITestsLaunchTests.swift */; };
+		1CDAF23329A6692600842AF8 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF23229A6692600842AF8 /* ContainerController.swift */; };
+		1CDAF23529A6693600842AF8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF23429A6693600842AF8 /* HomeController.swift */; };
+		1CDE375B29A76A4100B2016D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE375A29A76A4100B2016D /* Protocols.swift */; };
+		1CDE376029A7A27800B2016D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE375E29A7A27800B2016D /* SideMenuViewController.swift */; };
+		1CDE376129A7A27800B2016D /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE375F29A7A27800B2016D /* SideMenuViewController.xib */; };
+		1CDE376629A7AABA00B2016D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE376429A7AABA00B2016D /* SideMenuCell.swift */; };
+		1CDE376729A7AABA00B2016D /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE376529A7AABA00B2016D /* SideMenuCell.xib */; };
+		1CDE376929A7B5B100B2016D /* MenuOptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE376829A7B5B100B2016D /* MenuOptionItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		1CDAF21929A6587800842AF8 /* TMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDAF21D29A6587800842AF8 /* TMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMoviesUITests.swift; sourceTree = "<group>"; };
 		1CDAF21F29A6587800842AF8 /* TMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CDAF23229A6692600842AF8 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		1CDAF23429A6693600842AF8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		1CDE375A29A76A4100B2016D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		1CDE375E29A7A27800B2016D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		1CDE375F29A7A27800B2016D /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		1CDE376429A7AABA00B2016D /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		1CDE376529A7AABA00B2016D /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		1CDE376829A7B5B100B2016D /* MenuOptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +115,10 @@
 		1CDAF1FB29A6587600842AF8 /* TMovies */ = {
 			isa = PBXGroup;
 			children = (
-				1CDAF22C29A65ABA00842AF8 /* controllers */,
+				1CDAF23129A6614A00842AF8 /* CustomViews */,
+				1CDAF23029A6613200842AF8 /* Data */,
+				1CDAF22F29A6612900842AF8 /* Controllers */,
+				1CDAF22E29A6611F00842AF8 /* Utility */,
 				1CDAF1FC29A6587600842AF8 /* AppDelegate.swift */,
 				1CDAF1FE29A6587600842AF8 /* SceneDelegate.swift */,
 				1CDAF20229A6587600842AF8 /* Main.storyboard */,
@@ -127,12 +146,57 @@
 			path = TMoviesUITests;
 			sourceTree = "<group>";
 		};
-		1CDAF22C29A65ABA00842AF8 /* controllers */ = {
+		1CDAF22E29A6611F00842AF8 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				1CDAF20029A6587600842AF8 /* ViewController.swift */,
+				1CDE375A29A76A4100B2016D /* Protocols.swift */,
 			);
-			path = controllers;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1CDAF22F29A6612900842AF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE376229A7A27D00B2016D /* SideMenu */,
+				1CDAF23229A6692600842AF8 /* ContainerController.swift */,
+				1CDAF20029A6587600842AF8 /* ViewController.swift */,
+				1CDAF23429A6693600842AF8 /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1CDAF23029A6613200842AF8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE376829A7B5B100B2016D /* MenuOptionItem.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1CDAF23129A6614A00842AF8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE376329A7AA6D00B2016D /* SideMenuCell */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1CDE376229A7A27D00B2016D /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE375E29A7A27800B2016D /* SideMenuViewController.swift */,
+				1CDE375F29A7A27800B2016D /* SideMenuViewController.xib */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		1CDE376329A7AA6D00B2016D /* SideMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE376429A7AABA00B2016D /* SideMenuCell.swift */,
+				1CDE376529A7AABA00B2016D /* SideMenuCell.xib */,
+			);
+			path = SideMenuCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDE376129A7A27800B2016D /* SideMenuViewController.xib in Resources */,
 				1CDAF20929A6587700842AF8 /* LaunchScreen.storyboard in Resources */,
 				1CDAF20629A6587700842AF8 /* Assets.xcassets in Resources */,
+				1CDE376729A7AABA00B2016D /* SideMenuCell.xib in Resources */,
 				1CDAF20429A6587600842AF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDAF20129A6587600842AF8 /* ViewController.swift in Sources */,
+				1CDE376629A7AABA00B2016D /* SideMenuCell.swift in Sources */,
 				1CDAF1FD29A6587600842AF8 /* AppDelegate.swift in Sources */,
+				1CDE375B29A76A4100B2016D /* Protocols.swift in Sources */,
+				1CDE376929A7B5B100B2016D /* MenuOptionItem.swift in Sources */,
 				1CDAF1FF29A6587600842AF8 /* SceneDelegate.swift in Sources */,
+				1CDAF23329A6692600842AF8 /* ContainerController.swift in Sources */,
+				1CDE376029A7A27800B2016D /* SideMenuViewController.swift in Sources */,
+				1CDAF23529A6693600842AF8 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
