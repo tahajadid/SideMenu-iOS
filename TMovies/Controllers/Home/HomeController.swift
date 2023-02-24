@@ -22,7 +22,12 @@ class HomeController: UIViewController {
     }
     
     @objc func handleMenuToogle() {
-        delegate?.handleMenuToggle()
+        delegate?.handleMenuToggle(forMenuOptiom: MenuOptionItem(
+            id: 0,
+            title: "Home",
+            image: "home",
+            isSelected: true
+        ))
         print("Toogle menu..")
     }
     
@@ -35,7 +40,6 @@ class HomeController: UIViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor(named: "primary_color")]
         navigationController?.navigationBar.titleTextAttributes = textAttributes as [NSAttributedString.Key : Any]
         
-        //navigationItem.titleView?.tintColor = .white
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToogle))
         

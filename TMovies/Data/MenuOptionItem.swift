@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Categorie: Codable {
+struct MenuOptionItem: Codable {
     var id: Int?
     var title: String?
     var image: String?
-    var isSelected: Bool
+    var isSelected: Bool?
 }

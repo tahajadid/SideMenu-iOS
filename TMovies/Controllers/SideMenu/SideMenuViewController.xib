@@ -28,17 +28,19 @@
                         <constraint firstAttribute="width" constant="120" id="od4-kV-lgd"/>
                     </constraints>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2A2-mf-nBN">
-                    <rect key="frame" x="10" y="219" width="293" height="509"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2A2-mf-nBN">
+                    <rect key="frame" x="10" y="239" width="293" height="489"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJ6-4x-nO0">
-                    <rect key="frame" x="10" y="748" width="293" height="60"/>
+                    <rect key="frame" x="20" y="748" width="273" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d9-q4-dJb">
-                            <rect key="frame" x="115.66666666666667" y="18" width="61.666666666666671" height="24"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <rect key="frame" x="105.99999999999999" y="17" width="61.333333333333329" height="26"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -56,10 +58,10 @@
             <constraints>
                 <constraint firstItem="2A2-mf-nBN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="0RG-tB-pKn"/>
                 <constraint firstItem="YwB-Md-PNT" firstAttribute="centerX" secondItem="2A2-mf-nBN" secondAttribute="centerX" id="8Ta-UC-SpX"/>
-                <constraint firstItem="GJ6-4x-nO0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="9Oq-uY-4JH"/>
+                <constraint firstItem="GJ6-4x-nO0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9Oq-uY-4JH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GJ6-4x-nO0" secondAttribute="bottom" constant="10" id="R8d-G9-qV6"/>
-                <constraint firstItem="2A2-mf-nBN" firstAttribute="top" secondItem="YwB-Md-PNT" secondAttribute="bottom" constant="20" id="RHh-bp-CPo"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GJ6-4x-nO0" secondAttribute="trailing" constant="90" id="YyN-tM-myy"/>
+                <constraint firstItem="2A2-mf-nBN" firstAttribute="top" secondItem="YwB-Md-PNT" secondAttribute="bottom" constant="40" id="RHh-bp-CPo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GJ6-4x-nO0" secondAttribute="trailing" constant="100" id="YyN-tM-myy"/>
                 <constraint firstItem="YwB-Md-PNT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="dND-L3-VX6"/>
                 <constraint firstItem="GJ6-4x-nO0" firstAttribute="top" secondItem="2A2-mf-nBN" secondAttribute="bottom" constant="20" id="hvz-nW-U51"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2A2-mf-nBN" secondAttribute="trailing" constant="90" id="z0i-Hy-FgP"/>
