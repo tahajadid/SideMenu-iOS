@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardController" customModule="TMovies" customModuleProvider="target">
+            <connections>
+                <outlet property="leftView" destination="jg3-9N-ExU" id="tJD-Yy-ceM"/>
+                <outlet property="mainNavigationBar" destination="3jR-fN-5ri" id="aC8-5Q-xVd"/>
+                <outlet property="menuIcon" destination="8et-bC-ZXc" id="nsD-CP-0mY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jg3-9N-ExU" userLabel="leftView">
+                    <rect key="frame" x="0.0" y="103" width="80" height="715"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="eCo-VP-U6J"/>
+                    </constraints>
+                </view>
+                <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jR-fN-5ri">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <color key="barTintColor" name="screen_background"/>
+                    <items>
+                        <navigationItem title="T-Movies" id="czO-hB-4Rm">
+                            <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="8et-bC-ZXc">
+                                <color key="tintColor" name="primary_color"/>
+                                <connections>
+                                    <action selector="handlemenuClick:" destination="-1" id="tE9-9X-TSd"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="screen_background"/>
+            <constraints>
+                <constraint firstItem="3jR-fN-5ri" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8ND-1x-cDQ"/>
+                <constraint firstItem="jg3-9N-ExU" firstAttribute="top" secondItem="3jR-fN-5ri" secondAttribute="bottom" id="Hpy-5z-V7P"/>
+                <constraint firstItem="3jR-fN-5ri" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ica-A7-qlu"/>
+                <constraint firstItem="jg3-9N-ExU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PgK-2y-N3x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jg3-9N-ExU" secondAttribute="bottom" id="hDh-8W-zYQ"/>
+                <constraint firstItem="3jR-fN-5ri" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yxj-ec-AGy"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu" width="24" height="24"/>
+        <namedColor name="primary_color">
+            <color red="0.98431372549019602" green="0.59215686274509804" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="screen_background">
+            <color red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

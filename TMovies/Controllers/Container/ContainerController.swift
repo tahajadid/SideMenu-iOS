@@ -29,10 +29,19 @@ class ContainerController: UIViewController {
     // MARK: - Hnadlers
 
     func configureHomeController() {
-        let homeController = HomeController()
-        homeController.delegate = self
-        centerController = UINavigationController(rootViewController: homeController)
-        
+        let dashboardController = DashboardController()
+        dashboardController.delegate = self
+        centerController = UINavigationController(rootViewController: dashboardController)
+        view.addSubview(centerController.view)
+        addChild(centerController)
+        centerController.didMove(toParent: self)
+    }
+    
+    func configureProfileController() {
+        let profileController = ProfileController()
+        profileController.delegate = self
+
+        centerController = UINavigationController(rootViewController: profileController)
         view.addSubview(centerController.view)
         addChild(centerController)
         centerController.didMove(toParent: self)
@@ -75,7 +84,13 @@ class ContainerController: UIViewController {
             case "Home" :
                 print("Home Click")
             case "Profile" :
-                print("Profile Click")
+            //configureProfileController()
+            
+            let profileController = ProfileController()
+            profileController.modalPresentationStyle = .overFullScreen //or .overFullScreen for transparency
+            present(UINavigationController(rootViewController: profileController),animated: true,completion: nil)
+             
+            print("Profile Click")
             case "Settings" :
                 print("Settings Click")
             case "Security" :

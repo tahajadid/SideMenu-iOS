@@ -25,6 +25,10 @@
 		1CDE376729A7AABA00B2016D /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE376529A7AABA00B2016D /* SideMenuCell.xib */; };
 		1CDE376929A7B5B100B2016D /* MenuOptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE376829A7B5B100B2016D /* MenuOptionItem.swift */; };
 		1CDE376C29A81FCD00B2016D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE376B29A81FCD00B2016D /* Constants.swift */; };
+		1CDE377229A9162000B2016D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE377029A9162000B2016D /* ProfileController.swift */; };
+		1CDE377329A9162000B2016D /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE377129A9162000B2016D /* ProfileController.xib */; };
+		1CDE377729A9620900B2016D /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE377529A9620900B2016D /* DashboardController.swift */; };
+		1CDE377829A9620900B2016D /* DashboardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE377629A9620900B2016D /* DashboardController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		1CDE376529A7AABA00B2016D /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		1CDE376829A7B5B100B2016D /* MenuOptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionItem.swift; sourceTree = "<group>"; };
 		1CDE376B29A81FCD00B2016D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1CDE377029A9162000B2016D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		1CDE377129A9162000B2016D /* ProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
+		1CDE377529A9620900B2016D /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
+		1CDE377629A9620900B2016D /* DashboardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,8 @@
 		1CDAF22F29A6612900842AF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1CDE377429A961F100B2016D /* Dashboard */,
+				1CDE376F29A915FF00B2016D /* Profile */,
 				1CDE376D29A9059B00B2016D /* Container */,
 				1CDE376E29A9098200B2016D /* Home */,
 				1CDE376229A7A27D00B2016D /* SideMenu */,
@@ -216,6 +226,24 @@
 				1CDAF23429A6693600842AF8 /* HomeController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		1CDE376F29A915FF00B2016D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE377029A9162000B2016D /* ProfileController.swift */,
+				1CDE377129A9162000B2016D /* ProfileController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1CDE377429A961F100B2016D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE377529A9620900B2016D /* DashboardController.swift */,
+				1CDE377629A9620900B2016D /* DashboardController.xib */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,8 +351,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDE376129A7A27800B2016D /* SideMenuViewController.xib in Resources */,
+				1CDE377329A9162000B2016D /* ProfileController.xib in Resources */,
 				1CDAF20929A6587700842AF8 /* LaunchScreen.storyboard in Resources */,
 				1CDAF20629A6587700842AF8 /* Assets.xcassets in Resources */,
+				1CDE377829A9620900B2016D /* DashboardController.xib in Resources */,
 				1CDE376729A7AABA00B2016D /* SideMenuCell.xib in Resources */,
 				1CDAF20429A6587600842AF8 /* Main.storyboard in Resources */,
 			);
@@ -355,9 +385,11 @@
 				1CDE376629A7AABA00B2016D /* SideMenuCell.swift in Sources */,
 				1CDAF1FD29A6587600842AF8 /* AppDelegate.swift in Sources */,
 				1CDE375B29A76A4100B2016D /* Protocols.swift in Sources */,
+				1CDE377729A9620900B2016D /* DashboardController.swift in Sources */,
 				1CDE376929A7B5B100B2016D /* MenuOptionItem.swift in Sources */,
 				1CDE376C29A81FCD00B2016D /* Constants.swift in Sources */,
 				1CDAF1FF29A6587600842AF8 /* SceneDelegate.swift in Sources */,
+				1CDE377229A9162000B2016D /* ProfileController.swift in Sources */,
 				1CDAF23329A6692600842AF8 /* ContainerController.swift in Sources */,
 				1CDE376029A7A27800B2016D /* SideMenuViewController.swift in Sources */,
 				1CDAF23529A6693600842AF8 /* HomeController.swift in Sources */,

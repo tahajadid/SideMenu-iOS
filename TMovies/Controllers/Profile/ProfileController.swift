@@ -1,26 +1,22 @@
 //
-//  HomeController.swift
+//  ProfileController.swift
 //  TMovies
 //
-//  Created by Taha JADID on 22/2/2023.
+//  Created by Taha JADID on 24/2/2023.
 //
 
 import UIKit
 
-class HomeController: UIViewController {
-    // MARK: - Properties
-    
+class ProfileController: UIViewController {
     var delegate: HomeControllerDelegate?
-    
-    
-    // MARK: - Init
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor(named: "screen_background")
         configureNavigationBar()
+
+        // Do any additional setup after loading the view.
     }
-    
+
     @objc func handleMenuToogle() {
         delegate?.handleMenuToggle(forMenuOptiom: MenuOptionItem(
             id: 0,
@@ -28,7 +24,7 @@ class HomeController: UIViewController {
             image: "home",
             isSelected: true
         ))
-        print("Toogle menu(HomeController)..")
+        print("Toogle menu (ProfileController)..")
     }
     
     func configureNavigationBar() {
@@ -44,4 +40,5 @@ class HomeController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToogle))
         
     }
+
 }
