@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1CDAF1FD29A6587600842AF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF1FC29A6587600842AF8 /* AppDelegate.swift */; };
 		1CDAF1FF29A6587600842AF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF1FE29A6587600842AF8 /* SceneDelegate.swift */; };
-		1CDAF20129A6587600842AF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF20029A6587600842AF8 /* ViewController.swift */; };
 		1CDAF20429A6587600842AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDAF20229A6587600842AF8 /* Main.storyboard */; };
 		1CDAF20629A6587700842AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CDAF20529A6587700842AF8 /* Assets.xcassets */; };
 		1CDAF20929A6587700842AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDAF20729A6587700842AF8 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 		1CDAF21E29A6587800842AF8 /* TMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF21D29A6587800842AF8 /* TMoviesUITests.swift */; };
 		1CDAF22029A6587800842AF8 /* TMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF21F29A6587800842AF8 /* TMoviesUITestsLaunchTests.swift */; };
 		1CDAF23329A6692600842AF8 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF23229A6692600842AF8 /* ContainerController.swift */; };
-		1CDAF23529A6693600842AF8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF23429A6693600842AF8 /* HomeController.swift */; };
 		1CDE375B29A76A4100B2016D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE375A29A76A4100B2016D /* Protocols.swift */; };
 		1CDE376029A7A27800B2016D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE375E29A7A27800B2016D /* SideMenuViewController.swift */; };
 		1CDE376129A7A27800B2016D /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE375F29A7A27800B2016D /* SideMenuViewController.xib */; };
@@ -52,7 +50,6 @@
 		1CDAF1F929A6587600842AF8 /* TMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDAF1FC29A6587600842AF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDAF1FE29A6587600842AF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1CDAF20029A6587600842AF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CDAF20329A6587600842AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CDAF20529A6587700842AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CDAF20829A6587700842AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,7 +60,6 @@
 		1CDAF21D29A6587800842AF8 /* TMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMoviesUITests.swift; sourceTree = "<group>"; };
 		1CDAF21F29A6587800842AF8 /* TMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1CDAF23229A6692600842AF8 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
-		1CDAF23429A6693600842AF8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1CDE375A29A76A4100B2016D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		1CDE375E29A7A27800B2016D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		1CDE375F29A7A27800B2016D /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
@@ -171,9 +167,7 @@
 				1CDE377429A961F100B2016D /* Dashboard */,
 				1CDE376F29A915FF00B2016D /* Profile */,
 				1CDE376D29A9059B00B2016D /* Container */,
-				1CDE376E29A9098200B2016D /* Home */,
 				1CDE376229A7A27D00B2016D /* SideMenu */,
-				1CDAF20029A6587600842AF8 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,14 +212,6 @@
 				1CDAF23229A6692600842AF8 /* ContainerController.swift */,
 			);
 			path = Container;
-			sourceTree = "<group>";
-		};
-		1CDE376E29A9098200B2016D /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				1CDAF23429A6693600842AF8 /* HomeController.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		1CDE376F29A915FF00B2016D /* Profile */ = {
@@ -381,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CDAF20129A6587600842AF8 /* ViewController.swift in Sources */,
 				1CDE376629A7AABA00B2016D /* SideMenuCell.swift in Sources */,
 				1CDAF1FD29A6587600842AF8 /* AppDelegate.swift in Sources */,
 				1CDE375B29A76A4100B2016D /* Protocols.swift in Sources */,
@@ -392,7 +377,6 @@
 				1CDE377229A9162000B2016D /* ProfileController.swift in Sources */,
 				1CDAF23329A6692600842AF8 /* ContainerController.swift in Sources */,
 				1CDE376029A7A27800B2016D /* SideMenuViewController.swift in Sources */,
-				1CDAF23529A6693600842AF8 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
