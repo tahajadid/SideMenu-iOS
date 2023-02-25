@@ -37,16 +37,7 @@ class ContainerController: UIViewController {
         centerController.didMove(toParent: self)
     }
     
-    func configureProfileController() {
-        let profileController = ProfileController()
-        profileController.delegate = self
 
-        centerController = UINavigationController(rootViewController: profileController)
-        view.addSubview(centerController.view)
-        addChild(centerController)
-        centerController.didMove(toParent: self)
-    }
-    
     func configureMenuController() {
         if menuController == nil {
             menuController = SideMenuViewController()
@@ -83,21 +74,34 @@ class ContainerController: UIViewController {
         switch(menuOptionItem.title){
             case "Home" :
                 print("Home Click")
-            case "Profile" :
-            //configureProfileController()
             
-            let profileController = ProfileController()
-            profileController.modalPresentationStyle = .overFullScreen //or .overFullScreen for transparency
-            present(UINavigationController(rootViewController: profileController),animated: true,completion: nil)
-             
+            case "Profile" :
+            navigateToDestination("Profile")
             print("Profile Click")
+            
             case "Settings" :
+            navigateToDestination("Settings")
                 print("Settings Click")
+            
             case "Security" :
+            navigateToDestination("Security")
                 print("Security Click")
             default:
             print("Other")
         }
+    }
+    
+    /*
+        Navigate to the destination
+     */
+    func navigateToDestination(_ title: String) {
+        
+        let profileController = ProfileController()
+        profileController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        profileController.modalPresentationStyle = .overFullScreen //or .overFullScreen for transparency
+        self.present(profileController,animated: true,completion: nil)
+        profileController.centerText?.text = title
+
     }
 }
 
