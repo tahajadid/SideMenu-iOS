@@ -17,7 +17,6 @@
 		1CDAF21E29A6587800842AF8 /* TMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF21D29A6587800842AF8 /* TMoviesUITests.swift */; };
 		1CDAF22029A6587800842AF8 /* TMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF21F29A6587800842AF8 /* TMoviesUITestsLaunchTests.swift */; };
 		1CDAF23329A6692600842AF8 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF23229A6692600842AF8 /* ContainerController.swift */; };
-		1CDAF23529A6693600842AF8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDAF23429A6693600842AF8 /* HomeController.swift */; };
 		1CDE375B29A76A4100B2016D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE375A29A76A4100B2016D /* Protocols.swift */; };
 		1CDE376029A7A27800B2016D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE375E29A7A27800B2016D /* SideMenuViewController.swift */; };
 		1CDE376129A7A27800B2016D /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE375F29A7A27800B2016D /* SideMenuViewController.xib */; };
@@ -63,7 +62,6 @@
 		1CDAF21D29A6587800842AF8 /* TMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMoviesUITests.swift; sourceTree = "<group>"; };
 		1CDAF21F29A6587800842AF8 /* TMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1CDAF23229A6692600842AF8 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
-		1CDAF23429A6693600842AF8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1CDE375A29A76A4100B2016D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		1CDE375E29A7A27800B2016D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		1CDE375F29A7A27800B2016D /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 				1CDE377429A961F100B2016D /* Dashboard */,
 				1CDE376F29A915FF00B2016D /* Profile */,
 				1CDE376D29A9059B00B2016D /* Container */,
-				1CDE376E29A9098200B2016D /* Home */,
 				1CDE376229A7A27D00B2016D /* SideMenu */,
 				1CDAF20029A6587600842AF8 /* ViewController.swift */,
 			);
@@ -218,14 +215,6 @@
 				1CDAF23229A6692600842AF8 /* ContainerController.swift */,
 			);
 			path = Container;
-			sourceTree = "<group>";
-		};
-		1CDE376E29A9098200B2016D /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				1CDAF23429A6693600842AF8 /* HomeController.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		1CDE376F29A915FF00B2016D /* Profile */ = {
@@ -392,7 +381,6 @@
 				1CDE377229A9162000B2016D /* ProfileController.swift in Sources */,
 				1CDAF23329A6692600842AF8 /* ContainerController.swift in Sources */,
 				1CDE376029A7A27800B2016D /* SideMenuViewController.swift in Sources */,
-				1CDAF23529A6693600842AF8 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
